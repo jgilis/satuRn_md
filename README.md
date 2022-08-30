@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/jgilis/satuRn_md/tree/gh-pages) branch hosts the contents of this directory at <https://jgilis.github.io/satuRn_md/>.
-The permalink for this webpage version is <https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/>.
+The permalink for this webpage version is <https://jgilis.github.io/satuRn_md/v/5f4b20b9a616c0a283a1271e1741ce6034491f62/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://jgilis.github.io/satuRn_md/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c9d4d7606919e81aeaddc7601ec54b866e91b565`](https://github.com/jgilis/satuRn_md/commit/c9d4d7606919e81aeaddc7601ec54b866e91b565).
+[`5f4b20b9a616c0a283a1271e1741ce6034491f62`](https://github.com/jgilis/satuRn_md/commit/5f4b20b9a616c0a283a1271e1741ce6034491f62).

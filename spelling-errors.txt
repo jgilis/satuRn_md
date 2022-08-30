@@ -6,7 +6,7 @@ diffSplice
 DoubleExpSeq
 DRIMSeq
 DTU
-Dysregulation
+dysregulation
 frontotemporal
 FWO
 genomic

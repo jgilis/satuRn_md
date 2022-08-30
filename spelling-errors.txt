@@ -6,7 +6,7 @@ diffSplice
 DoubleExpSeq
 DRIMSeq
 DTU
-dysregulation
+Dysregulation
 figIntro
 frontotemporal
 FWO
@@ -26,7 +26,7 @@ mance
 NBSplice
 perfor
 quadratically
-scalability
+Scalability
 scRNA
 Seerup
 statOmics

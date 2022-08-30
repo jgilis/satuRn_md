@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jgilis.github.io/satuRn_md/" />
   <meta name="citation_pdf_url" content="https://jgilis.github.io/satuRn_md/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jgilis.github.io/satuRn_md/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/" />
-  <meta name="manubot_html_url_versioned" content="https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jgilis.github.io/satuRn_md/v/5f4b20b9a616c0a283a1271e1741ce6034491f62/" />
+  <meta name="manubot_html_url_versioned" content="https://jgilis.github.io/satuRn_md/v/5f4b20b9a616c0a283a1271e1741ce6034491f62/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jgilis.github.io/satuRn_md/v/5f4b20b9a616c0a283a1271e1741ce6034491f62/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/))
+([permalink](https://jgilis.github.io/satuRn_md/v/5f4b20b9a616c0a283a1271e1741ce6034491f62/))
 was automatically generated
-from [jgilis/satuRn_md@c9d4d76](https://github.com/jgilis/satuRn_md/tree/c9d4d7606919e81aeaddc7601ec54b866e91b565)
+from [jgilis/satuRn_md@5f4b20b](https://github.com/jgilis/satuRn_md/tree/5f4b20b9a616c0a283a1271e1741ce6034491f62)
 on August 30, 2022.
 </em></small>
 
@@ -149,7 +149,7 @@ In this context, full-length single-cell RNA-Seq (scRNA-seq) technologies such a
 A) Performance evaluation on the simulated bulk RNA-Seq dataset from Love et al.18 Each curve displays the perfor- mance of each method by evaluating the sensitivity (true positive rate, TPR) with respect to the false discovery rate (FDR). The three circles on each curve represent working points when the FDR level is set at nominal levels of 1%, 5% and 10%, respectively. The circles are filled if the empirical FDR is equal or below the imposed FDR threshold. DEXSeq and DoubleExpSeq clearly have the highest performances. Note that most methods, and DRIMSeq in particular, fail to control the FDR at its nominal level. 
 B) Scalability with respect to the number of cells in a scRNA-Seq dataset. While all other methods scale linearly with an increasing number of cells, DEXSeq scales quadratically. As such, DEXSeq cannot be used for the analysis of large bulk and scRNA-Seq datasets. For all sample sizes, the number of transcripts in the datasets were set at 30.000. Note that NBSplice needed to be omitted from this analysis as it fails to converge on datasets with a large proportion of zero counts (see below). 
 C) Scalability with respect to the number of transcripts in a scRNA-Seq dataset. While all other methods scale linearly with an increasing number of cells, BANDITS scales quadratically. Moreover, BANDITS failed to run on our system for datasets with 7.500 transcripts or more. As such, it had to be omitted from panels A and B. A performance and scalability evaluation of BANDITS on datasets with an (artificial) lower number of transcripts is provided as Extended data figures S1 and S3.25
-](images/fig1){#fig:figIntro secno=1}
+](images/fig1.gif){#fig:figIntro secno=1}
 
 
 

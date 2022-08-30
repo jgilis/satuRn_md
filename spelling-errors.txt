@@ -1,7 +1,12 @@
 Berge
+dataset
 datasets
+DEXSeq
+diffSplice
+DoubleExpSeq
+DRIMSeq
 DTU
-dysregulation
+Dysregulation
 frontotemporal
 FWO
 genomic
@@ -15,6 +20,8 @@ koenvandenberge
 Kristoffer
 kvittingseerup
 Lieven
+limma
+NBSplice
 scRNA
 Seerup
 statOmics

@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jgilis.github.io/satuRn_md/" />
   <meta name="citation_pdf_url" content="https://jgilis.github.io/satuRn_md/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jgilis.github.io/satuRn_md/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jgilis.github.io/satuRn_md/v/ad08f202c2975a9b0089ac61d056847f02e1152f/" />
-  <meta name="manubot_html_url_versioned" content="https://jgilis.github.io/satuRn_md/v/ad08f202c2975a9b0089ac61d056847f02e1152f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jgilis.github.io/satuRn_md/v/ad08f202c2975a9b0089ac61d056847f02e1152f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jgilis.github.io/satuRn_md/v/271942615dc79ca200fd81395403a65a56d532d4/" />
+  <meta name="manubot_html_url_versioned" content="https://jgilis.github.io/satuRn_md/v/271942615dc79ca200fd81395403a65a56d532d4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jgilis.github.io/satuRn_md/v/271942615dc79ca200fd81395403a65a56d532d4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jgilis.github.io/satuRn_md/v/ad08f202c2975a9b0089ac61d056847f02e1152f/))
+([permalink](https://jgilis.github.io/satuRn_md/v/271942615dc79ca200fd81395403a65a56d532d4/))
 was automatically generated
-from [jgilis/satuRn_md@ad08f20](https://github.com/jgilis/satuRn_md/tree/ad08f202c2975a9b0089ac61d056847f02e1152f)
+from [jgilis/satuRn_md@2719426](https://github.com/jgilis/satuRn_md/tree/271942615dc79ca200fd81395403a65a56d532d4)
 on August 30, 2022.
 </em></small>
 
@@ -142,6 +142,8 @@ Alternative splicing produces multiple functional transcripts from a single gene
 ## Introduction
 
 Studying differential expression (DE) is one of the key tasks in the downstream analysis of RNA-seq data. Typically, DE analyses identify expression changes on the gene level. However, the widespread adoption of expression quantification through pseudo-alignment,1,2 which enables fast and accurate quantification of expression at the transcript level, has effectively paved the way for transcript-level analyses. Here, we specifically address differential transcript usage (DTU) analysis, one type of transcript-level analysis that studies the change in relative usage of transcripts/isoforms within the same gene. DTU analysis holds great potential: previous research has shown that most multi-exon human genes are subject to alternative splicing and can thus produce a variety of functionally different isoforms from the same genomic locus.3–5 The dysregulation of this splicing process has been reported extensively as a cause for disease,6–9 including several neurological diseases such as frontotemporal dementia, Parkinsonism and spinal muscular atrophy, and is a well- known hallmark of cancer.10
+
+In this context, full-length single-cell RNA-Seq (scRNA-seq) technologies such as Smart-Seq211 and Smart-Seq312 hold the promise to further increase the resolution of DTU analysis from bulk RNA-seq data towards the single-cell level, where differences in transcript usage are expected to occur naturally between cell types. However, only a few bespoke DTU methods have been developed for scRNA-seq data and they lack biological interpretation. Indeed, methods specifically developed for scRNA-seq data are either restricted to exon/event level13,14 analysis (e.g. pinpointing exons involved in splicing events), or they can only pinpoint DTU genes without unveiling the actual transcripts that are involved.15 Interestingly, many DTU methods for bulk RNA-seq do provide inference at the transcript level and their performance has already been extensively profiled in benchmark studies.16–18 Based on a subset of the simulated RNA- seq dataset from Love et al.18 (see Methods), we show the performance of six DTU tools; DEXSeq,19 DoubleExpSeq,20 DRIMSeq,21 edgeR diffSplice,22 limma diffSplice23 and NBSplice24 (Figure 1A). DEXSeq and DoubleExpSeq have a higher performance than the other methods. In addition, we observe that most methods, and DRIMSeq in particular, fail to control the false discovery rate (FDR) at its nominal level, which is in line with previous reports.16–18
 
 ## References {.page_break_before}
 

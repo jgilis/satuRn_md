@@ -1,27 +1,42 @@
 ---
-title: "Manuscript Title"
+title: "satuRn: Scalable analysis of differential transcript usage for bulk and single-cell RNA-sequencing applications"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: jgilis
+    name: Jeroen Gilis
+    initials: JG
+    orcid: 0000-0001-8415-0943
+    twitter: GilisJeroen
+    email: jeroen.gilis@ugent.be
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Applied Mathematics, Computer science and Statistics, Ghent University
     funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
+      - FWO
+  - github: kvittingseerup
+    name: Kristoffer Vitting-Seerup
+    initials: KVS
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
-    corresponding: true
+  - github: koenvandenberge
+    name: Koen Van den Berge
+    initials: KvdB
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+  - github: statOmics
+    name: Lieven Clement
+    initials: LC
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something

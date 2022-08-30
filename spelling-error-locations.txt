@@ -58,3 +58,4 @@ content/02.introduction.md:10:scalability
 content/02.introduction.md:10:Scalability
 content/02.introduction.md:10:scRNA
 content/02.introduction.md:11:figIntro
+content/02.introduction.md:11:figIntro

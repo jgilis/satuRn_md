@@ -7,6 +7,7 @@ DoubleExpSeq
 DRIMSeq
 DTU
 dysregulation
+figIntro
 frontotemporal
 FWO
 genomic
@@ -21,10 +22,15 @@ Kristoffer
 kvittingseerup
 Lieven
 limma
+mance
 NBSplice
+perfor
+quadratically
+scalability
 scRNA
 Seerup
 statOmics
+TPR
 transcriptome
 Vitting
 XXXX

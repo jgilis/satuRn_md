@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jgilis.github.io/satuRn_md/" />
   <meta name="citation_pdf_url" content="https://jgilis.github.io/satuRn_md/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jgilis.github.io/satuRn_md/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jgilis.github.io/satuRn_md/v/d14f821f944f53f2c114a92713195ead5b319ad2/" />
-  <meta name="manubot_html_url_versioned" content="https://jgilis.github.io/satuRn_md/v/d14f821f944f53f2c114a92713195ead5b319ad2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jgilis.github.io/satuRn_md/v/d14f821f944f53f2c114a92713195ead5b319ad2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/" />
+  <meta name="manubot_html_url_versioned" content="https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jgilis.github.io/satuRn_md/v/d14f821f944f53f2c114a92713195ead5b319ad2/))
+([permalink](https://jgilis.github.io/satuRn_md/v/c9d4d7606919e81aeaddc7601ec54b866e91b565/))
 was automatically generated
-from [jgilis/satuRn_md@d14f821](https://github.com/jgilis/satuRn_md/tree/d14f821f944f53f2c114a92713195ead5b319ad2)
+from [jgilis/satuRn_md@c9d4d76](https://github.com/jgilis/satuRn_md/tree/c9d4d7606919e81aeaddc7601ec54b866e91b565)
 on August 30, 2022.
 </em></small>
 
@@ -143,7 +143,15 @@ Alternative splicing produces multiple functional transcripts from a single gene
 
 Studying differential expression (DE) is one of the key tasks in the downstream analysis of RNA-seq data. Typically, DE analyses identify expression changes on the gene level. However, the widespread adoption of expression quantification through pseudo-alignment[@doi:10.1038/nbt.3519; @doi:10.1038/nmeth.4197], which enables fast and accurate quantification of expression at the transcript level, has effectively paved the way for transcript-level analyses. Here, we specifically address differential transcript usage (DTU) analysis, one type of transcript-level analysis that studies the change in relative usage of transcripts/isoforms within the same gene. DTU analysis holds great potential: previous research has shown that most multi-exon human genes are subject to alternative splicing and can thus produce a variety of functionally different isoforms from the same genomic locus.3–5 The dysregulation of this splicing process has been reported extensively as a cause for disease,6–9 including several neurological diseases such as frontotemporal dementia, Parkinsonism and spinal muscular atrophy, and is a well- known hallmark of cancer.10
 
-In this context, full-length single-cell RNA-Seq (scRNA-seq) technologies such as Smart-Seq211 and Smart-Seq312 hold the promise to further increase the resolution of DTU analysis from bulk RNA-seq data towards the single-cell level, where differences in transcript usage are expected to occur naturally between cell types. However, only a few bespoke DTU methods have been developed for scRNA-seq data and they lack biological interpretation. Indeed, methods specifically developed for scRNA-seq data are either restricted to exon/event level13,14 analysis (e.g. pinpointing exons involved in splicing events), or they can only pinpoint DTU genes without unveiling the actual transcripts that are involved.15 Interestingly, many DTU methods for bulk RNA-seq do provide inference at the transcript level and their performance has already been extensively profiled in benchmark studies.16–18 Based on a subset of the simulated RNA- seq dataset from Love et al.18 (see Methods), we show the performance of six DTU tools; DEXSeq,19 DoubleExpSeq,20 DRIMSeq,21 edgeR diffSplice,22 limma diffSplice23 and NBSplice24 (Figure 1A). DEXSeq and DoubleExpSeq have a higher performance than the other methods. In addition, we observe that most methods, and DRIMSeq in particular, fail to control the false discovery rate (FDR) at its nominal level, which is in line with previous reports.16–18
+In this context, full-length single-cell RNA-Seq (scRNA-seq) technologies such as Smart-Seq211 and Smart-Seq312 hold the promise to further increase the resolution of DTU analysis from bulk RNA-seq data towards the single-cell level, where differences in transcript usage are expected to occur naturally between cell types. However, only a few bespoke DTU methods have been developed for scRNA-seq data and they lack biological interpretation. Indeed, methods specifically developed for scRNA-seq data are either restricted to exon/event level13,14 analysis (e.g. pinpointing exons involved in splicing events), or they can only pinpoint DTU genes without unveiling the actual transcripts that are involved.15 Interestingly, many DTU methods for bulk RNA-seq do provide inference at the transcript level and their performance has already been extensively profiled in benchmark studies.16–18 Based on a subset of the simulated RNA- seq dataset from Love et al.18 (see Methods), we show the performance of six DTU tools; DEXSeq,19 DoubleExpSeq,20 DRIMSeq,21 edgeR diffSplice,22 limma diffSplice23 and NBSplice24 (Figure @fig:figIntro). DEXSeq and DoubleExpSeq have a higher performance than the other methods. In addition, we observe that most methods, and DRIMSeq in particular, fail to control the false discovery rate (FDR) at its nominal level, which is in line with previous reports.16–18
+
+![**Figure 1. Performance and scalability evaluation of six differential transcript usage (DTU) methods.**
+A) Performance evaluation on the simulated bulk RNA-Seq dataset from Love et al.18 Each curve displays the perfor- mance of each method by evaluating the sensitivity (true positive rate, TPR) with respect to the false discovery rate (FDR). The three circles on each curve represent working points when the FDR level is set at nominal levels of 1%, 5% and 10%, respectively. The circles are filled if the empirical FDR is equal or below the imposed FDR threshold. DEXSeq and DoubleExpSeq clearly have the highest performances. Note that most methods, and DRIMSeq in particular, fail to control the FDR at its nominal level. 
+B) Scalability with respect to the number of cells in a scRNA-Seq dataset. While all other methods scale linearly with an increasing number of cells, DEXSeq scales quadratically. As such, DEXSeq cannot be used for the analysis of large bulk and scRNA-Seq datasets. For all sample sizes, the number of transcripts in the datasets were set at 30.000. Note that NBSplice needed to be omitted from this analysis as it fails to converge on datasets with a large proportion of zero counts (see below). 
+C) Scalability with respect to the number of transcripts in a scRNA-Seq dataset. While all other methods scale linearly with an increasing number of cells, BANDITS scales quadratically. Moreover, BANDITS failed to run on our system for datasets with 7.500 transcripts or more. As such, it had to be omitted from panels A and B. A performance and scalability evaluation of BANDITS on datasets with an (artificial) lower number of transcripts is provided as Extended data figures S1 and S3.25
+](images/fig1){#fig:figIntro secno=1}
+
+
 
 ## References {.page_break_before}
 
